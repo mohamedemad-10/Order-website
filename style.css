@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+     overflow-x: hidden;
+     width: 1580px;
+}
+/* <<<<<<<<<<<< NAVBAR >>>>>>>>>>>> */
+.nav-section-1 {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url(./images/blue_bg.png);
+    background-size: cover;
+    border-bottom-right-radius: 70px;
+    z-index: 2;
+}
+/* .nav-section-1 .bg img{
+ position: absolute;
+ width: 100%;
+ z-index: -1;
+} */
+.nav-section-1 nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 130px;
+    padding-top: 30px;
+}
+.nav-section-1 nav .left-side-nav  {
+    display: flex;
+    list-style: none;
+}
+.nav-section-1 nav .left-side-nav ul  {
+   display: flex;
+   padding-top: 20px;
+   gap: 40px;
+}
+.nav-section-1 nav .left-side-nav ul a {
+    color: #000000a2;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+.nav-section-1 nav .left-side-nav ul a li {
+   list-style: none;
+   font-size: 17px;
+   transition: .7s;
+}
+.nav-section-1 nav .left-side-nav ul a .border-active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 75%;
+    background-color: brown;
+}
+
+.nav-section-1 nav .left-side-nav ul a li:hover {
+    opacity: .5;
+    cursor: pointer;
+ }
+.nav-section-1 nav .left-side-nav .logo a img {
+    width: 140px;
+    height: 70px;
+    transition: .7s;
+}
+.nav-section-1 nav .left-side-nav .logo a img:hover {
+   transform: scale(1.2);
+   cursor: pointer;
+}
+.nav-section-1 nav .right-side-nav .login-button {
+    margin-top: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 100px;
+    text-transform: capitalize;
+    color: #000000a2;
+    font-size: 17px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    transition: .7s;
+}
+.nav-section-1 nav .right-side-nav .login-button:hover {
+    transform: scale(.9);
+    cursor: pointer;
+}
+/* <<<<<<<<<<< SECTION 1 >>>>>>>>> */
+.nav-section-1 .section {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.nav-section-1 .section .left-side-section {
+ width: fit-content;
+ padding-left: 150px;
+ padding-top: 215px;
+}
+.nav-section-1 .section .left-side-section h2 {
+   font-size: 44px;
+   color: #000000a2;
+   font-weight: 500;
+   font-family: sans-serif;
+   margin-bottom: 24px;
+}
+.nav-section-1 .section .left-side-section h2 span {
+    font-size: 43px;
+    color: #6c377f;
+}
+.nav-section-1 .section .left-side-section p {
+    font-size: 19px;
+    color: #00000069;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.nav-section-1 .section .right-side-section {
+    width: 50%;
+     margin-right: 130px; 
+    position: relative;
+    
+    /* padding-right: 60px; */
+    margin-bottom: 20px;
+    display: block;
+}
+.nav-section-1 .section .right-side-section .bg-blue {
+    width: 900px;
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+}
+.nav-section-1 .section .right-side-section .mask-group {
+    position: absolute;
+    top: 0px;
+    right: 270px;
+    height: 500px;
+    z-index: 1;
+}
+.nav-section-1 .section .right-side-section .clouds {
+    position: absolute;
+    top: 25rem;
+    /* bottom: -330px; */
+    right: 190px;
+    width: 450px;
+    height: 200px;
+    z-index: 1;
+    /* transform: rotateX(70deg); */
+    transition: .9s;
+}
+.nav-section-1 .section .right-side-section .clouds2 {
+    position: absolute;
+    top: 34rem;
+    /* bottom: -330px; */
+    right: 210px;
+    width: 450px;
+    height: 200px;
+    opacity: .8;
+    z-index: 1;
+    transform: rotate(-25deg);
+    transition: .9s;
+}
+.nav-section-1 .section .right-side-section .clouds:hover {
+    cursor: pointer;
+}
+.nav-section-1 .section .right-side-section .wave {
+    position: absolute;
+    padding-right: 270px;
+    z-index: 2;
+    height: 250px;
+    bottom: -430px;
+    right: 70px;
+}
+@media only screen and (min-width:320px) and (max-width:350px) {
+    .nav-section-1 .section .right-side-section   {
+        margin-right: 540px;
+        width: 700px;
+    }
+    .nav-section-1 .section .left-side-section {
+        width: fit-content;
+        padding-left: 190px;
+        padding-top: 215px;
+       }
+    .nav-section-1 .section .right-side-section .mask-group {
+      position: absolute;
+      right: 30px;
+    }
+    .nav-section-1 .section .right-side-section .clouds {
+      position: absolute;
+      right: -50px;
+    }
+    .nav-section-1 .section .right-side-section .clouds2 {
+        position: absolute;
+        right:-50px;
+      }
+      .nav-section-1 .section .right-side-section .wave {
+        position: absolute;
+        right:-100px;
+      }
+    .nav-section-1 nav .right-side-nav .login-button {
+        margin-right: 260px;
+    }
+}  
+/* <<<<<<<<<<<< SECTION 2 >>>>>>>>>>> */
+.section-1 .section-2 {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #ffffff;
+    position: relative;
+}
+.section-1 .section-2 .img1-road img {
+   position: absolute;
+   width: 1000px;
+   left: 300px;
+}
+.section-1 .section-2 .Group-1 {
+    position: absolute;
+    left: 200px;
+    bottom: -328px;
+}
+.section-1 .section-2 .Group-1 img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+.section-1 .section-2 .Group-1 div h2 {
+    text-align: center;
+    color: #898989;
+    margin-right: 60px;
+    font-size: 20px;
+}
+.section-1 .section-2 .Group-1 div{
+    position: relative;
+    left: -50px;
+} 
+.section-1 .section-2 .Group-1 div  p {
+    text-align: center;
+    margin-right: 60px;
+    font: 17px sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 9px;
+    color: #c0c0c0;
+}
+.section-1 .section-2 .Group-2 img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.section-1 .section-2 .Group-2 {
+    position: absolute;
+    left: 670px;
+    bottom: -470px;
+}
+.section-1 .section-2 .Group-2 div{
+    position: relative;
+    left: -50px;
+} 
+.section-1 .section-2 .Group-2 h2 {
+    text-align: center;
+    color: #898989;
+    font: 12px;
+}
+.section-1 .section-2 .Group-2 p {
+    text-align: center;
+    font: 17px sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 4px;
+    color: #c0c0c0;
+}
+.section-1 .section-2 .Group-3 img {
+    width: 240px;
+    margin-bottom: 10px;
+    filter: grayscale(60%);
+}
+.section-1 .section-2 .Group-3 div{
+    position: relative;
+    left: -50px;
+} 
+.section-1 .section-2 .Group-3 {
+    position: absolute;
+    right: 160px;
+    bottom: -735px;
+}
+.section-1 .section-2 .Group-3 h2 {
+    text-align: center;
+    color: #898989;
+    font: 12px;
+}
+.section-1 .section-2 .Group-3 p {
+    text-align: center;
+    font: 17px sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 4px;
+    color: #c0c0c0
+}
+.section-1 .section-2 .why-choose img {
+  position: absolute;
+  bottom: -860px;
+  width: 400px;
+  margin-left: 170px;
+  z-index: -1;
+}
+.section-1 .section-2 .why-choose .text {
+    position: absolute;
+    z-index: 1;
+    bottom: -720px;
+    left: 270px;
+}
+.section-1 .section-2 .why-choose .text p {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 7px;
+} 
+.section-1 .section-2 .why-choose .text h2 {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 500;
+} 
+@media only screen and (min-width:420px) and (max-width:1024px) {
+    .section-1 .section-2 {
+        position: relative;
+        top: 140px;
+        left: -10px;
+    }
+    .section-1 .section-2 .img1-road img {
+        width: 1000px;
+    }
+    .section-1 .section-2 .Group-3  {
+        position: absolute;
+        right: 180px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:377px) {
+    .section-1 .section-2 {
+        position: relative;
+        top: 140px;
+        left: -10px;
+    }
+    .section-1 .section-2 .img1-road img {
+        width: 950px;
+    }
+    .section-1 .section-2 .Group-3  {
+        position: absolute;
+        right: 270px;
+    }
+}
+/* <<<<<<<<<<<< SECTION 3 >>>>>>>>>>>> */
+.section-4 .section-5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1000px;
+    position: relative;
+    gap: 10px;
+}   
+.section-4 .section-5  .start i {
+    color: #ababab;
+    font-size: 24px;
+    cursor: grab;
+    position: relative;
+    top: 3px;
+    margin-left: 50px;
+    transition: .9s;
+}
+.section-4 .section-5  .end i {
+    color: #ababab;
+    font-size: 24px;
+    cursor: grab;
+    position: relative;
+    top: 25px;
+    margin-right: 50px;
+    transition: .9s;
+}
+.section-4 .section-5  .start i:hover {
+    opacity: .2;
+}
+.section-4 .section-5  .end i:hover {
+    opacity: .2;
+}
+.section-4 .section-5 .center div {
+    position: relative;
+    top: -30px;
+}
+.section-4 .section-5  .center div h2 {
+ text-align: center;
+ color: #898989;
+ font-size: 23px;
+ font-weight: 500;
+ margin-bottom: 30px;
+}
+.section-4 .section-5  .center div p {
+    text-align: center;
+    color: #c4c4c4;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.section-4 .section-5  .start {
+     margin-top: 130px; 
+}
+.section-4 .section-5  .end {
+    margin-top: 130px; 
+}
+.section-4 .section-5  .start img {
+    width: 200px;
+    transition: .9s;
+}
+.section-4 .section-5  .end img {
+   width: 200px;
+   transition: .9s;
+}    
+.section-4 .section-5  .center img {
+    width: 470px;
+    transition: .9s;
+}   
+.section-4 .section-5  .start img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.section-4 .section-5  .end img:hover {
+   transform: scale(1.2);
+   cursor: pointer;
+}    
+.section-4 .section-5  .center img:hover {
+    transform: scale(.8);
+    cursor: pointer;
+}  
+@media only screen and (min-width:320px) and (max-width:1024px) {
+    .section-4 .section-5 {
+        margin-top: 1200px;
+    }
+}     
+@media only screen and (min-width:320px) and (max-width:350px) {
+    .section-4 .section-5 {
+        margin-top: 1200px;
+        margin-right: 190px;
+    }
+}  
+ /* <<<<<<<<<<< SECTION 4 FOOTER >>>>>>>>>>>> */
+
+.section-3 footer {
+    width: 100%;
+    position: relative;
+    /* margin-top: 300px; */
+    background-image: url(./images/Group\ 1131.png);
+    background-size: 105%;
+    height: 570px;
+    left: -15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* .section-3 footer .footer-bg img {
+    width: 110%;
+    position: absolute;
+    top:-90px;
+    right: -12px;
+    left: -40px;
+    z-index: -1;
+} */
+.section-3 footer .left-side-foot {
+    position: absolute;
+    top: 300px;
+    margin-left: 100px;
+}
+.section-3 footer .left-side-foot .install {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: 20px;
+}
+.section-3 footer .left-side-foot .install .iphone , .android {
+    width: 150px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.section-3 footer .left-side-foot .install .android .text {
+    position: absolute;
+    left: 220px;
+    top: 28px;
+}
+.section-3 footer .left-side-foot .install .android .text .line {
+    margin-bottom: 10px;
+    width: 75px;
+    height: 2px;
+    background-color: #b4232d71;
+}
+.section-3 footer .left-side-foot .install .android .text h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-3 footer .left-side-foot .install .iphone .text {
+    position: absolute;
+    left: 50px;
+    top: 28px;
+}
+.section-3 footer .left-side-foot .install .iphone .text .line {
+    margin-bottom: 10px;
+    width: 75px;
+  height: 2px;
+  background-color: #b4232d71;
+}
+.section-3 footer .left-side-foot .install .iphone .text h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-3 footer .left-side-foot .install .iphone .img .apple {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transition: .9s;
+} 
+.section-3 footer .left-side-foot .install div .img .play {
+    position: absolute;
+    top: 22px;
+    left: 180px;
+    transition: .9s;
+} 
+.section-3 footer .left-side-foot .install .iphone .img .apple:hover {
+    transform: scale(.8);
+} 
+  .section-3 footer .left-side-foot .install div .img .play:hover {
+      transform: scale(.8);
+} 
+.section-3 footer .right-side-foot img {
+     width: 740px;
+     position: absolute;
+     right: 80px;
+     bottom: 0px;
+}
+  
+
+
+
+.section-3 footer .left-side-foot .socail-media{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+.section-3 footer .left-side-foot .socail-media div img {
+    width: 35px;
+    transition: .9s;
+}
+.section-3 footer .left-side-foot .socail-media div img:hover {
+    transform: scale(1.2);
+}
+.section-3 footer .left-side-foot .socail-media div .face {
+    width: 22px;
+}
+.section-3 footer .left-side-foot .list ul {
+    margin-top: 70px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.section-3 footer .left-side-foot .list ul a {
+    text-decoration: none;
+    color: #fbfbfb;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: .9s;
+}
+.section-3 footer .left-side-foot .list ul a:hover {
+    opacity: .7;
+}
+@media only screen and (min-width:320px) and (max-width:350) {
+    /* .section-3 footer .footer-bg img {
+        width: 110%;
+    position: absolute;
+    top:-90px;
+    right: 50px;
+    left: -220px;
+    z-index: -1;
+    } */
+    .section-3 footer .right-side-foot img {
+    position: absolute;
+    margin-right: 130px;
+   
+    }
+}  
